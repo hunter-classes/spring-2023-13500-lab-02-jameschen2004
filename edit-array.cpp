@@ -34,9 +34,12 @@ std::cout << myData[i] << " ";
 
 std::cout << "Please enter cell index: ";
 std::cin >> cell_index;
-std::cout << " \nWhat is the index's new value? \n";
+std::cout << "What is the index's new value? \n";
 std::cin >> cell_index_value;
+
+if(cell_index >= 0 || cell_index <10){ 
 myData[cell_index] = cell_index_value;
+}
 
 } 
 while(cell_index >= 0 && cell_index < 10);
