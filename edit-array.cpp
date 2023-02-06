@@ -27,5 +27,13 @@ std::cout << myData[i] << " ";
 
 std::cout << std::endl;
 
+int cell_index;
+std::cout << "Please enter cell index: ";
+std::cin >> cell_index;
+std::cout " \n What is the index's new value?";
+while(cell_index < 0 || cell_index > 10)
+    std::cout << "Cell index out of range. Program terminated. \n"
+
+
 return 0;
 }
