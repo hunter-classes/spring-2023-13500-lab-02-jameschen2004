@@ -21,25 +21,22 @@ for(int i = 0; i < 10; i++){
 
 }
 
-for(int i = 0; i < 10; i++){
-std::cout << myData[i] << " ";
-}
-
 std::cout << std::endl;
 
 int cell_index;
 int cell_index_value;
 
 do{
+
+for(int i = 0; i < 10; i++){
+std::cout << myData[i] << " ";
+}
+
 std::cout << "Please enter cell index: ";
 std::cin >> cell_index;
 std::cout << " \nWhat is the index's new value? \n";
 std::cin >> cell_index_value;
 myData[cell_index] = cell_index_value;
-
-for(int i = 0; i < 10; i++){
-std::cout << myData[i] << " ";
-}
 
 } 
 while(cell_index >= 0 && cell_index < 10);
